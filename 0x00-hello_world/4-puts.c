@@ -1,10 +1,13 @@
 #include <stdio.h>
-
-int main(void) 
+/**
+ * main - Entry point
+ *
+ * Description: 'the program's description'
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-	char str[50] = "Programming is like building a multilingual puzzle\0";
-
-	puts(str);
-	
-	return 0;
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
