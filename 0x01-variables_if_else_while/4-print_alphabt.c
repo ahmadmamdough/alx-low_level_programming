@@ -12,7 +12,11 @@ int main(void)
 	char c = 'a';
 
 	for (i = 0; i < 26; i++)
+	{
+		if (c + i == 'e' || c + i == 'q')
+			continue;
 		putchar(c + i);
+	}
 	putchar('\n');
 
 	return (0);
