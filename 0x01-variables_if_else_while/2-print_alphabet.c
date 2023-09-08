@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 		putchar(c + i);
-	putchr('\n');
+	putchar('\n');
 
 	return (0);
 }
