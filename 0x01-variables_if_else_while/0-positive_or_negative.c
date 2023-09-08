@@ -3,7 +3,15 @@
 #include <time.h>
 /* more headers goes there */
 
-/*this is dummmbbbbb betty style doc for function main goes there */
+/*
+ * this is the main function to do absloutly nothing but it has to be documented
+ *
+ * main - Entry point
+ *
+ * Description: linux is a simple but genius OS
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
