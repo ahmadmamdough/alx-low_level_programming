@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
+/**
  * main - Entry point
  *
- * Description: dumbbbbbbbb
+ * Description: 'this is nothing but dumb'
  *
  * Return: Always 0 (Success)
  */
