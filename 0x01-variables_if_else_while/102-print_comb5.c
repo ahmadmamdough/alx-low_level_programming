@@ -13,35 +13,20 @@ int main(void)
 	int x;
 	int y;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = i + 1; j < 100; j++)
 		{
-			if (j == 9)
-			{
-				x = i + 1;
-				y = 0;
-			}
-			else
-			{
-				x = i;
-				y = j + 1;
-			}
 
-			for (; x < 10; x++)
-			{
-				for (; y < 10; y++)
-				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(x + '0');
-					putchar(y + '0');
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			if (j == 8)
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
+			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
+			putchar(',');
+			putchar(' ');
+		}
+			if (i == 99)
 				putchar('\n');
 		}
 	}
