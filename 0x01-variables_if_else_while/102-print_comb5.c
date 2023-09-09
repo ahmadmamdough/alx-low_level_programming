@@ -10,8 +10,6 @@ int main(void)
 {
 	int i;
 	int j;
-	int x;
-	int y;
 
 	for (i = 0; i < 100; i++)
 	{
