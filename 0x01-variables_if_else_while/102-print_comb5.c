@@ -42,7 +42,7 @@ int main(void)
 				}
 			}
 			if (j == 8)
-				putchar('\n);
+				putchar('\n');
 		}
 	}
 }
