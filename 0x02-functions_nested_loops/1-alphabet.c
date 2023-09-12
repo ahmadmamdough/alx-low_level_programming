@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: 'function implementaion of print_alphaber'
  *
