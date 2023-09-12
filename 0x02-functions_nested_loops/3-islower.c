@@ -1,12 +1,12 @@
 #include "main.h"
 /*
- * islower - Entry point
+ * _islower - Entry point
  *
  * Description: 'check for letter case'
  *
  * Return: Always 0 (Success)
  */
-int islower(int c)
+int _islower(int c)
 {
 	if (c > 'a' && c < 'z')
 		return (1);
