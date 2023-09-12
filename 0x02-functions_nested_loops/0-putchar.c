@@ -1,5 +1,11 @@
-#include "_putchar.c" 
-
+#include "main.h"_
+/**
+ * main - Entry point
+ *
+ * Description: 'combinations of numbers'
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char str[] = "_putchar\n";
