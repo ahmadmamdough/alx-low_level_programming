@@ -19,8 +19,7 @@ void print_times_table(int n)
 		{
 			tmp = i * j;
 			if (j != 0)
-				_putchar(' ');
-
+				printf(" ");
 			if (tmp > 99)
 				printf("%d", tmp);
 			else if (tmp > 9)
