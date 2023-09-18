@@ -13,10 +13,12 @@ void puts_half(char *s)
 	while (*(s + size) != '\0')
 		size++;
 
-	if (size % 2 == 0)
-		size /= 2;
-	else
-		size = (size - 1) / 2;
+	if (size % 2 == 1)
+		s++;
+
+	size /= 2;
+
+	s += size;
 
 	for (i = 0; i < size; i++)
 		_putchar(*(s + i));
