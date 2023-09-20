@@ -6,9 +6,9 @@
  */
 char *leet(char *s)
 {
-	char m[] = "olOeaEAt"
 	int i = 0;
 	int j;
+	char m[] = "olOeaEAt";
 
 	while (s[i])
 	{
@@ -17,6 +17,8 @@ char *leet(char *s)
 			if (s[i] == m[j] || s[i] + 32 == m[j])
 				s[i] = '0' + j;
 		}
+
+		i++;
 	}
 	return (s);
 }
