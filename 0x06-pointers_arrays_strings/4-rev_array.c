@@ -4,7 +4,7 @@
  * @a: the first element in the array;
  * @n: the number of elements
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i;
 
@@ -13,6 +13,6 @@ void reverse_array(int *a, int n);
 		int tmp = a[i];
 
 		a[i] = a[n - 1 - i];
-		a[n - 1 - i] =  tmp;
+		a[n - 1 - i] = tmp;
 	}
 }
