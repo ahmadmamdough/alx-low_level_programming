@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * caps_string - implemts capitallization
+ * cap_string - implemts capitallization
  * @s: the desired string
  * Return: capitalized string
  */
