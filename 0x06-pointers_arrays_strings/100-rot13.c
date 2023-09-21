@@ -13,13 +13,10 @@ char *rot13(char *s)
 
 	while (s[i])
 	{
-		if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+		for (j = 0; j < 52; j++)
 		{
-			for (j = 0; j < 52; j++)
-			{
-				if (s[i] == bf[j])
-					s[j] = af[j];
-			}
+			if (s[i] == bf[j])
+				s[j] = af[j];
 		}
 		i++;
 	}
