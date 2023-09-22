@@ -8,16 +8,16 @@
  */
 void print_number(int n)
 {
-	char *x[20];
+	char x[20];
 	int i = 0;
-	bool sign = 1;
+	int sign = 1;
 
 	if (n < 0)
 		sign = 0;
 
 	while (n)
 	{
-		x[i] = n % 10;
+		x[i] = n % 10 + '0';
 		n /= 10;
 		i++;
 	}
