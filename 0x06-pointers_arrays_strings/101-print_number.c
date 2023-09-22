@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * print_number - prints number using _putchar
  *
@@ -8,28 +9,16 @@
  */
 void print_number(int n)
 {
-	char x[20];
-	int i = 0;
-	int sign = 1;
+	int i = log10(n);
 
 	if (n < 0)
-		sign = 0;
-
-	while (n)
 	{
-		x[i] = n % 10 + '0';
-		n /= 10;
-		i++;
+		n *= -1;
+		_putchar("-");
 	}
-
-	if (!sign)
-	{
-		x[i] = '-';
-		i++;
-	}
-
-	i--;
-
 	while (i >= 0)
-		_putchar(x[i--]);
+	{
+		_putchar((int) (n / pow(10, i)) % 10 + '0');
+		i--;
+	}
 }
