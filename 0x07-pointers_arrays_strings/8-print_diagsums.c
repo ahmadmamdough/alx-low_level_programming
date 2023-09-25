@@ -7,13 +7,13 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int rigt = 0;
+	int right = 0;
 	int left = 0;
 
-	for (int i = 0; i < size(); i++)
+	for (int i = 0; i < size; i++)
 	{
-		right += a[i][size - 1 - i];
-		left += a[i][i];
+		right += *(a + size * i + size - 1 - i);
+		left += *(a + size * i + i);
 	}
 
 	printf("%d, %d\n", left, right);
