@@ -3,7 +3,7 @@
  * _pow_recursion - return x pow y
  * @x: the first number
  * @y: the second number
- * Reuturn: x ** y
+ * Return: x ** y
  */
 int _pow_recursion(int x, int y)
 {
