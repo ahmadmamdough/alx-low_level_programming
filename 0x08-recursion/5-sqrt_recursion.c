@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * x - implementaion
+ * @n: the number to check it's sqrt
+ * @y: counter
+ * Return: result
+ */
 int x(int n, int y)
 {
 	if (y * y > n)
@@ -7,7 +12,7 @@ int x(int n, int y)
 	if (y * y == n)
 		return (y);
 
-	return (x, y + 1);
+	return (x(n, y + 1));
 }
 
 /**
