@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * @argc:  number of command line argument
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	result = argv[1] * argv[2];
+	result = atoi(argv[1]) * atoi(argv[2]);
 
 	printf("%d\n", result);
 
