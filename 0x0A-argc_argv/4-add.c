@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * main - entry point
@@ -10,17 +11,19 @@ int main(int argc, char *argv[])
 {
 	int result = 0;
 	int i;
-	int tmp = 0;
+	size_t j;
 
 	for (i = 1; i < argc; i++)
 	{
-		tmp = atoi(argv[i]);
-		if (tmp == 0)
+		for (j = 0; j < strlen(argv[i]); j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		result += tmp;
+		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
 
