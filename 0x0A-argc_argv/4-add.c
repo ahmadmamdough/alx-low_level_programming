@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 	int result = 0;
 	int i;
 	int tmp = 0;
+
 	for (i = 1; i < argc; i++)
 	{
 		tmp = atoi(argv[i]);
