@@ -20,6 +20,11 @@ int main(int argc, char *argv[])
 
 	tmp = atoi(argv[1]);
 
+	if (tmp < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 	result += tmp / 25;
 	tmp %= 25;
 
