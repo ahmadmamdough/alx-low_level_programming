@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	result += tmp / 2;
 	tmp %= 2;
 
-	result += tmp
+	result += tmp;
 
 	printf("%d\n", result);
 
