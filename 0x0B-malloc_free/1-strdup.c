@@ -8,8 +8,7 @@
 char *_strdup(char *s)
 {
 	char *buffer;
-	size_t i = 0;
-	int size;
+	int i = 0;
 
 	if (s == NULL)
 		return (NULL);
@@ -17,7 +16,7 @@ char *_strdup(char *s)
 	while (*(s + i) != '\0')
 		i++;
 
-	buffer = malloc(i  sizeof(char));
+	buffer = malloc(i *  sizeof(char));
 
 	if (buffer == NULL)
 	{
