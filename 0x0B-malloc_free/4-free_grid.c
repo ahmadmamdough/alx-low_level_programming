@@ -2,11 +2,11 @@
 #include "main.h"
 /**
  * free_grid - entry point
- * @grid: buffer
+ * @buffer: buffer
  * @height: height
  */
 
-void free_grid(int **grid, int height)
+void free_grid(int **buffer, int height)
 {
 	int j;
 
