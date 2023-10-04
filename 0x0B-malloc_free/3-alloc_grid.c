@@ -33,6 +33,7 @@ int **alloc_grid(int width, int height)
 			{
 				free(buffer[j]);
 			}
+			free(buffer);
 			return (NULL);
 		}
 	}
