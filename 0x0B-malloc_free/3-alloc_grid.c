@@ -40,7 +40,7 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
-			buffer[i][j] == 0;
+			buffer[i][j] = 0;
 	}
 	return (buffer);
 }
