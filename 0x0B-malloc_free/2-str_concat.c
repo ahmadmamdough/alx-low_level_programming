@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * concat - entry point
+ * str_concat - entry point
  * @s1: first string
  * @s2: second string
  * Return: pointer to the buffer
  */
-char *concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int size1 = 0;
 	int size2 = 0;
