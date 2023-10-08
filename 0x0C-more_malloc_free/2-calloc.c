@@ -20,7 +20,7 @@ void *_calloc(unsigned int n, unsigned int size)
 	if (buffer == NULL)
 		return (buffer);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n * size; i++)
 	{
 		buffer[i] = 0;
 	}
