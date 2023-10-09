@@ -16,7 +16,7 @@ void *_realloc(void *p, unsigned int old_size, unsigned int new_size)
 
 	if (p == NULL)
 	{
-		buffer = malloc(newsize);
+		buffer = malloc(new_size);
 		return (buffer);
 	}
 
