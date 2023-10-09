@@ -33,8 +33,7 @@ void *_realloc(void *p, unsigned int old_size, unsigned int new_size)
 
 	if (buffer == NULL)
 	{
-		free(ptr);
-		return (NULL);
+		return (ptr);
 	}
 
 	if (old_size < new_size)
