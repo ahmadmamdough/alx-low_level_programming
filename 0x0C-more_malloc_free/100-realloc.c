@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _realloc - entry point
- * @ptr: the old buffer
+ * @p: the old buffer
  * @old_size: the old size
  * @new_size: reallocation size
  * Return: the new buffer
@@ -13,7 +13,7 @@ void *_realloc(void *p, unsigned int old_size, unsigned int new_size)
 	char *buffer = NULL;
 	int i;
 	char *ptr = p;
-	
+
 	if (old_size == new_size)
 		return (ptr);
 
