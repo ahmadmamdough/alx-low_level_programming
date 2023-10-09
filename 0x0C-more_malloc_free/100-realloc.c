@@ -41,7 +41,7 @@ void *_realloc(void *p, unsigned int old_size, unsigned int new_size)
 
 	for (i = 0; i < size; i++)
 		buffer[i] = *(ptr + i);
-	
+
 	free(ptr);
 
 	return (buffer);
