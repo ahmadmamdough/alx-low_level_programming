@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include "3-calc.h"
-
+/**
+ * get_op_func - returns pointer to function
+ * @s: the op
+ * Return: pointer to function
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -15,6 +19,6 @@ int (*get_op_func(char *s))(int, int)
 
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
-	
+
 	return (ops->f);
 }

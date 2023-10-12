@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a; 
+	int a;
 	int b;
 	char *op;
 
@@ -18,11 +18,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	
+
 	a = atoi(argv[1]);
 	op = argv[2];
 	b = atoi(argv[3]);
-	
+
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
