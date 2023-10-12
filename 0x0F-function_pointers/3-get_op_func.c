@@ -13,8 +13,8 @@ int (*get_op_func(char *s)(int, int))
 	};
 	int i = 0;
 
-	while (ops.op != NULL && ops.op != *s)
+	while (ops->op != NULL && ops->op != *s)
 		i++;
 	
-	return (ops.f);
+	return (ops->f);
 }
