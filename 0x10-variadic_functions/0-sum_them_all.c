@@ -4,7 +4,7 @@
 /**
  * sum_them_all - entry point
  * @n: variable
- * Return: the sum;
+ * Return: the sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -16,7 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	va_start(args, n);
-	
+
 	for (i = 0; i < n; i++)
 	{
 		sum += va_arg(args, int);
