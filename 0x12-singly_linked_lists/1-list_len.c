@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * list-len - enrty point
+ * list_len - enrty point
  * @h: head of file
  * Return: number of elements
  */
