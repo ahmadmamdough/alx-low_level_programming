@@ -19,7 +19,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		tmp->str = strdup(str);
 		tmp->len = strlen(str);
 		tmp->next = NULL;
-		
+
 		if (!*head)
 		{
 			*head = tmp;
@@ -30,7 +30,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			i = i->next;
 
 		i->next = tmp;
-	
+
 		return (tmp);
 	}
 
