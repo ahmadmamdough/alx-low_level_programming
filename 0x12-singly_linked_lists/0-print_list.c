@@ -3,7 +3,7 @@
 
 /**
  * print_list - enrty point
- * h: head of file
+ * @h: head of file
  * Return: number of elements
  */
 size_t print_list(const list_t *h)
@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str != NULL)
 			printf("[%d] %s\n", h->len, h->str);
-		else 
+		else
 			printf("[0] (nil)\n");
 		h = h->next;
 		i++;
