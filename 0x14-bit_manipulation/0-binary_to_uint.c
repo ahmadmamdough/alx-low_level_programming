@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			res += p;
 		}
-		else if (b != '0' && c != '1')
+		else if (b[i] != '0' && b[i] != '1')
 			return (0);
 		p *= 2;
 		i++;
