@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * binary_to_uint - entry
@@ -8,13 +9,17 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int res = 0, i = 0, p = 1;
+	int len = strlen(b);
 
+	len--;
 	while (b[i])
 	{
-		if (b[i] == '1')
+		if (b[len - i] == '1')
 		{
 			res += p;
 		}
+		else if (b != '0' && c != '1')
+			return (0);
 		p *= 2;
 		i++;
 	}
